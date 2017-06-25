@@ -3,9 +3,10 @@ title:       Cowsay Physics
 email:       emptymalei@qq.com
 author:      OctoMiao
 description: "What does the cow say about physics?"
-# baseurl:     "cowsay-physics"
+baseurl:     "cowsay-physics"
 url:         ""
 date_format: "%b %-d, %Y"
+github_repo: "https://github.com/emptymalei/cowsay-physics/"
 
 # Google services
 google_verification:
@@ -16,13 +17,26 @@ google_tag_manager:
 # Bing services
 bing_verification:
 
+collections:
+  cowphy:
+    title: Cowsay Physics
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "cowphy"
+    values:
+      layout: cowphy
+
 # Optional features
 animated:             false
 show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    false
 ajaxify_contact_form: false
-enable_mathjax: false
+enable_mathjax: true
 extended_fonts: false
 
 # Disqus post comments
@@ -36,7 +50,7 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
+github_username: NeuPhysics
 bitbucket_username:
 stackoverflow_id:
 twitter_username:

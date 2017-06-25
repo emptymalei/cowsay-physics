@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/cowphy/solar-mass/</loc>
+<lastmod>2017-06-20T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/cowphy/torque-is-cheap/</loc>
+<lastmod>2017-06-20T00:00:00-06:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/jekyll/pixyll/2014/06/08/pixyll-has-pagination/</loc>
 <lastmod>2014-06-08T05:21:29-06:00</lastmod>
 </url>
@@ -17,10 +25,6 @@
 <lastmod>2014-06-11T09:31:19-06:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/jekyll/pixyll/2015/07/11/announcing-pixyll-version-2/</loc>
-<lastmod>2015-07-11T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/404.html</loc>
 </url>
 <url>
@@ -30,15 +34,12 @@
 <loc>http://localhost:4000/archive/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/contact/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/thanks/</loc>
+<loc>http://localhost:4000/submit/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/page2/</loc>
+<loc>http://localhost:4000/thanks/</loc>
 </url>
 </urlset>

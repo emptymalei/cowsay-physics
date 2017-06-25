@@ -12,8 +12,11 @@
     <link rel="canonical" href="http://localhost:4000/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for Cowsay Physics" href="/feed.xml" />
 
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css" />-->
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/pixyll.css?201706251348" type="text/css">
+    <link rel="stylesheet" href="/assets/css/pixyll.css?201706251744" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.css?201706251744" type="text/css">
 
     <!-- Fonts -->
     
@@ -23,6 +26,64 @@
     
 
     <!-- MathJax -->
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] },
+      messageStyle: "none"
+   });
+  </script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+      cancel: ["Extension","cancel"]
+      });
+   });
+   </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      processEscapes: true
+    }
+  });
+</script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        overlr: ['\\overset\\leftrightarrow{\#1}',1],
+        overl: ['\\overset\leftarrow{\#1}',1],
+        overr: ['\\overset\rightarrow{\#1}',1],
+        bra: ['\\left\\langle \#1\\right|',1],
+        ket: ['\\left| \#1\\right\\rangle',1],
+        braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+        avg: ['\\left< \#1 \\right>',1],
+        slashed: ['\\cancel{\#1}',1],
+        bold: ['\\boldsymbol{\#1}',1],
+        sech: ['\\operatorname{sech}{\#1}',1],
+        csch: ['\\operatorname{csch}{\#1}',1]
+      }
+    }
+  });
+  </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     
 
     <!-- Verifications -->
@@ -61,6 +122,10 @@
     <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
 
+
+    
+    
+
     
 </head>
 
@@ -78,7 +143,7 @@
     
 
     
-        <a href="/about/">About Pixyll</a>
+        <a href="/about/">About</a>
     
 
     
@@ -97,8 +162,6 @@
 
     
 
-    
-
 
     
 
@@ -107,15 +170,15 @@
     
 
     
-        <a href="/contact/">Say Hello</a>
-    
 
     
 
     
 
     
-
+        <a href="/submit/">
+            Submit
+        </a>
     
 
     
@@ -135,70 +198,87 @@
 
     <div class="post p2 p-responsive wrap" role="main">
       <div class="measure">
-        
+        <div class="home">
 
-<div class="home">
-  
-    <div class="posts">
-      
-        <div class="post py3">
-          <p class="post-meta">Jul 11, 2015</p>
-          <a href="/jekyll/pixyll/2015/07/11/announcing-pixyll-version-2/" class="post-link"><h3 class="h1 post-title">Announcing Version 2.0</h3></a>
-          <p class="post-summary">
-            
-              Now, Pixyll is lighter weight and more customizable than before.
-            
-          </p>
-        </div>
-      
-        <div class="post py3">
-          <p class="post-meta">Jun 11, 2014</p>
-          <a href="/jekyll/pixyll/2014/06/11/welcome-to-pixyll/" class="post-link"><h3 class="h1 post-title">Hello, Pixyll</h3></a>
-          <p class="post-summary">
-            
-              Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.
-            
-          </p>
-        </div>
-      
-        <div class="post py3">
-          <p class="post-meta">Jun 10, 2014</p>
-          <a href="/jekyll/pixyll/2014/06/10/see-pixyll-in-action/" class="post-link"><h3 class="h1 post-title">Pixyll in Action</h3></a>
-          <p class="post-summary">
-            
-              See what the different elements looks like. Your markdown has never looked better. I promise.
-            
-          </p>
-        </div>
-      
-        <div class="post py3">
-          <p class="post-meta">Jun 9, 2014</p>
-          <a href="/jekyll/pixyll/2014/06/09/so-what-is-jekyll/" class="post-link"><h3 class="h1 post-title">So, What is Jekyll?</h3></a>
-          <p class="post-summary">
-            
-              Transform your plain text into static websites and blogs. Simple, static, and blog-aware.
-            
-          </p>
-        </div>
-      
-    </div>
 
-    <div class="pagination clearfix mb1 mt4">
-  <div class="left">
-    
-      <span class="pagination-item disabled">Newer</span>
-    
+ 
+
+<div class="posts center">
+
+
+
+
+<div style="display:block;">
+
+   <div class="post py3 pdivideleft" style="clear: left;">
+  <a href="/cowphy/solar-mass/">
+    <img src="/cowphy/assets/test-cowphy/cowsay-mass-sun-earth.png">
+  </a>
   </div>
-  <div class="right">
-    
-      <a class="pagination-item" href="/page2/">Older</a>
-    
+
+  <div class="post py3 pdivideright" style="margin-bottom:2em;">
+      <p class="post-meta">Jun 20, 2017</p>
+      <a href="/cowphy/solar-mass/" class="post-link"><h3 class="h2 post-title">Solar mass</h3></a>
+      <p class="post-summary">
+              
+                It's always fun to play with units
+              
+      </p>
+      <p class="post-meta post-tags"> 
+          #general relativity# 
+          
+          #units# 
+           </p>
   </div>
+
+ 
+
+</div>
+<div style="clear: left;">
+
+
+<div style="display:block;">
+
+   <div class="post py3 pdivideleft" style="clear: left;">
+  <a href="/cowphy/torque-is-cheap/">
+    <img src="/cowphy/assets/test-cowphy/cowsay-torque-is-cheap.png">
+  </a>
+  </div>
+
+  <div class="post py3 pdivideright" style="margin-bottom:2em;">
+      <p class="post-meta">Jun 20, 2017</p>
+      <a href="/cowphy/torque-is-cheap/" class="post-link"><h3 class="h2 post-title">Torque is cheap</h3></a>
+      <p class="post-summary">
+              
+                The famous CS saying transformed to physics
+              
+      </p>
+      <p class="post-meta post-tags"> 
+          #classical mechanics# 
+          
+          #torque# 
+          
+          #angular momentum# 
+           </p>
+  </div>
+
+ 
+
+</div>
+<div style="clear: left;">
+
+
+
+
 </div>
 
-  
-</div>
 
+
+
+
+    
+
+</div>
       </div>
     </div>
   </div>
@@ -206,8 +286,8 @@
   <footer class="center">
   <div class="measure">
     <small>
-      Theme crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
-      &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+      We all love cowsay &lt;3.<br>
+      &lt;/&gt; available on <a href="https://github.com/emptymalei/cowsay-physics/">Github</a>.
     </small>
   </div>
 </footer>

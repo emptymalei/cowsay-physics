@@ -1,0 +1,25 @@
+@media screen and (min-width: 32em) {
+   .pdivideleft {
+      width:45%;
+      float:left;
+      margin-left:1%;
+      margin-right:1%;
+      min-width: 16em;
+   }
+   .pdivideright {
+      width:45%;
+      float:right;
+      margin-left:1%;
+      margin-right:1%;
+      min-width: 16em;
+   }
+   .pdivide img {
+   display: block;
+    margin: auto;
+   }
+}
+
+.post-tags {
+   overflow: none;
+}
+

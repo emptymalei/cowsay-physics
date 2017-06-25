@@ -3,17 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Say Hello &#8211; Cowsay Physics</title>
+    <title>Submit &#8211; Cowsay Physics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="What does the cow say about physics?">
     <meta name="robots" content="all">
     <meta name="author" content="OctoMiao">
     
-    <link rel="canonical" href="http://localhost:4000/contact/">
+    <link rel="canonical" href="http://localhost:4000/submit/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for Cowsay Physics" href="/feed.xml" />
 
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css" />-->
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/pixyll.css?201706251348" type="text/css">
+    <link rel="stylesheet" href="/assets/css/pixyll.css?201706251744" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.css?201706251744" type="text/css">
 
     <!-- Fonts -->
     
@@ -24,6 +27,64 @@
 
     <!-- MathJax -->
     
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] },
+      messageStyle: "none"
+   });
+  </script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+      cancel: ["Extension","cancel"]
+      });
+   });
+   </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      processEscapes: true
+    }
+  });
+</script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        overlr: ['\\overset\\leftrightarrow{\#1}',1],
+        overl: ['\\overset\leftarrow{\#1}',1],
+        overr: ['\\overset\rightarrow{\#1}',1],
+        bra: ['\\left\\langle \#1\\right|',1],
+        ket: ['\\left| \#1\\right\\rangle',1],
+        braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+        avg: ['\\left< \#1 \\right>',1],
+        slashed: ['\\cancel{\#1}',1],
+        bold: ['\\boldsymbol{\#1}',1],
+        sech: ['\\operatorname{sech}{\#1}',1],
+        csch: ['\\operatorname{csch}{\#1}',1]
+      }
+    }
+  });
+  </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
 
     <!-- Verifications -->
     
@@ -33,17 +94,17 @@
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Say Hello">
+    <meta property="og:title" content="Submit">
     <meta property="og:description" content="What does the cow say about physics?">
-    <meta property="og:url" content="http://localhost:4000/contact/">
+    <meta property="og:url" content="http://localhost:4000/submit/">
     <meta property="og:site_name" content="Cowsay Physics">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     
-    <meta name="twitter:title" content="Say Hello" />
+    <meta name="twitter:title" content="Submit" />
     <meta name="twitter:description" content="What does the cow say about physics?" />
-    <meta name="twitter:url" content="http://localhost:4000/contact/" />
+    <meta name="twitter:url" content="http://localhost:4000/submit/" />
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/apple-touch-icon-57x57.png">
@@ -60,6 +121,10 @@
     <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
+
+
+    
+    
 
     
 </head>
@@ -78,7 +143,7 @@
     
 
     
-        <a href="/about/">About Pixyll</a>
+        <a href="/about/">About</a>
     
 
     
@@ -97,8 +162,6 @@
 
     
 
-    
-
 
     
 
@@ -107,15 +170,15 @@
     
 
     
-        <a href="/contact/">Say Hello</a>
-    
 
     
 
     
 
     
-
+        <a href="/submit/">
+            Submit
+        </a>
     
 
     
@@ -137,22 +200,21 @@
       <div class="measure">
         <div class="post">
   <header class="post-header">
-    <h1 class="h2">Say Hello</h1>
+    <h1 class="h2 center">Submit</h1>
+    <hr>
   </header>
   <article class="post-content">
-  <div class="py2">
-  
-    <form action="https://formspree.io/emptymalei@qq.com" method="POST" class="form-stacked">
-      <input type="text" name="email" class="field-light" placeholder="Email Address">
-      <textarea type="text" name="content" class="field-light" rows="5" placeholder="What would you like to say?"></textarea>
-      <input type="hidden" name="_next" value="/thanks/" />
-      <input type="hidden" name="_subject" value="New submission!" />
-      <input type="text" name="_gotcha" style="display:none" />
-      <input type="submit" class="button button-blue button-big mobile-block" value="Say Hello">
-    </form>
-  
-</div>
+  <h2 id="how-to-submit">How to submit</h2>
 
+<ol>
+  <li>Submit your cowsay at <a href="https://github.com/emptymalei/cowsay-physics//issues">GitHub Issues</a>.</li>
+  <li>You can either submit the text only. I will create the corresponding cowsay by myself based on it.</li>
+  <li>Please provide names or links so I can give you the credit.</li>
+</ol>
+
+<h2 id="how-to-create">How to create</h2>
+
+<p>To create a cowsay, use cowsay in terminal. Alternatively, <a href="http://cowsay.morecode.org/">Cowsay Online</a> provides online version of cowsay.</p>
 
 
   </article>
@@ -165,8 +227,8 @@
   <footer class="center">
   <div class="measure">
     <small>
-      Theme crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
-      &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+      We all love cowsay &lt;3.<br>
+      &lt;/&gt; available on <a href="https://github.com/emptymalei/cowsay-physics/">Github</a>.
     </small>
   </div>
 </footer>

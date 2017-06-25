@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>About Pixyll &#8211; Cowsay Physics</title>
+    <title>About &#8211; Cowsay Physics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="What does the cow say about physics?">
     <meta name="robots" content="all">
@@ -12,8 +12,11 @@
     <link rel="canonical" href="http://localhost:4000/about/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for Cowsay Physics" href="/feed.xml" />
 
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css" />-->
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/pixyll.css?201706251348" type="text/css">
+    <link rel="stylesheet" href="/assets/css/pixyll.css?201706251744" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.css?201706251744" type="text/css">
 
     <!-- Fonts -->
     
@@ -24,6 +27,64 @@
 
     <!-- MathJax -->
     
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] },
+      messageStyle: "none"
+   });
+  </script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+      cancel: ["Extension","cancel"]
+      });
+   });
+   </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      processEscapes: true
+    }
+  });
+</script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        overlr: ['\\overset\\leftrightarrow{\#1}',1],
+        overl: ['\\overset\leftarrow{\#1}',1],
+        overr: ['\\overset\rightarrow{\#1}',1],
+        bra: ['\\left\\langle \#1\\right|',1],
+        ket: ['\\left| \#1\\right\\rangle',1],
+        braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+        avg: ['\\left< \#1 \\right>',1],
+        slashed: ['\\cancel{\#1}',1],
+        bold: ['\\boldsymbol{\#1}',1],
+        sech: ['\\operatorname{sech}{\#1}',1],
+        csch: ['\\operatorname{csch}{\#1}',1]
+      }
+    }
+  });
+  </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
 
     <!-- Verifications -->
     
@@ -33,7 +94,7 @@
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="About Pixyll">
+    <meta property="og:title" content="About">
     <meta property="og:description" content="What does the cow say about physics?">
     <meta property="og:url" content="http://localhost:4000/about/">
     <meta property="og:site_name" content="Cowsay Physics">
@@ -41,7 +102,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     
-    <meta name="twitter:title" content="About Pixyll" />
+    <meta name="twitter:title" content="About" />
     <meta name="twitter:description" content="What does the cow say about physics?" />
     <meta name="twitter:url" content="http://localhost:4000/about/" />
 
@@ -61,6 +122,10 @@
     <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
 
+
+    
+    
+
     
 </head>
 
@@ -78,7 +143,7 @@
     
 
     
-        <a href="/about/">About Pixyll</a>
+        <a href="/about/">About</a>
     
 
     
@@ -97,8 +162,6 @@
 
     
 
-    
-
 
     
 
@@ -107,15 +170,15 @@
     
 
     
-        <a href="/contact/">Say Hello</a>
-    
 
     
 
     
 
     
-
+        <a href="/submit/">
+            Submit
+        </a>
     
 
     
@@ -137,24 +200,19 @@
       <div class="measure">
         <div class="post">
   <header class="post-header">
-    <h1 class="h2">About Pixyll</h1>
+    <h1 class="h2 center">About</h1>
+    <hr>
   </header>
   <article class="post-content">
-  <p>This Jekyll theme was crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a>
-(<a href="https://twitter.com/4lpine">@4lpine</a>).</p>
+  <p>Acknowledgement:</p>
 
-<p>Checkout the <a href="https://github.com/johnotander/pixyll">Github repository</a> to download it,
-request a feature, report a bug, or contribute. It’s free, and open source
-(<a href="http://opensource.org/licenses/MIT">MIT</a>).</p>
-
-<p>Thanks to the following:</p>
-
-<ul>
-  <li><a href="http://basscss.com">BASSCSS</a></li>
-  <li><a href="http://jekyllrb.com">Jekyll</a></li>
-  <li><a href="http://refills.bourbon.io/">Refills</a></li>
-  <li><a href="http://type-scale.com/">Type Scale</a></li>
-</ul>
+<ol>
+  <li>Jekyll</li>
+  <li>Jekyll theme <a href="https://github.com/johnotander/pixyll">Pixyll</a> made by <a href="http://johnotander.com">John Otander</a>
+(<a href="https://twitter.com/4lpine">@4lpine</a>) under
+(<a href="http://opensource.org/licenses/MIT">MIT</a>).</li>
+  <li><a href="http://brewformulas.org/Cowsay">Cowsay</a>. As a note, cowsay is available on Windows and Linux.</li>
+</ol>
 
   </article>
 </div>
@@ -166,8 +224,8 @@ request a feature, report a bug, or contribute. It’s free, and open source
   <footer class="center">
   <div class="measure">
     <small>
-      Theme crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
-      &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+      We all love cowsay &lt;3.<br>
+      &lt;/&gt; available on <a href="https://github.com/emptymalei/cowsay-physics/">Github</a>.
     </small>
   </div>
 </footer>

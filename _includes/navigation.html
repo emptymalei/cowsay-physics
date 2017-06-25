@@ -4,7 +4,9 @@
     {% endif %}
 {% endfor %}
 {% for page in site.pages %}
-    {% if page.tags contains "contact" %}
-        <a href="{{ page.url }}">{{ page.title }}</a>
+    {% if page.tags contains "submit" %}
+        <a href="{{ page.url }}">
+            {{ page.title }}
+        </a>
     {% endif %}
 {% endfor %}
