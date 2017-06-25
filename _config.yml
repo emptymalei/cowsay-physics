@@ -3,7 +3,7 @@ title:       Cowsay Physics
 email:       emptymalei@qq.com
 author:      OctoMiao
 description: "What does the cow say about physics?"
-baseurl:     "cowsay-physics"
+# baseurl:     "cowsay-physics"
 url:         ""
 date_format: "%b %-d, %Y"
 github_repo: "https://github.com/emptymalei/cowsay-physics/"
