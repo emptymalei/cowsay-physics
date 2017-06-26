@@ -8,7 +8,7 @@ tags: submit
 ## How to submit
 
 1. Submit your cowsay at <a href="{{ site.github_repo }}/issues">GitHub Issues</a>.
-2. You can either submit the text only. I will create the corresponding cowsay by myself based on it. 
+2. You can submit the text only. I will create the corresponding cowsay by myself based on it. Alternatively you can submit a cowsay image with illustrations.
 3. Please provide names or links so I can give you the credit.
 
 ## How to create
