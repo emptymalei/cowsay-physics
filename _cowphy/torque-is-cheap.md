@@ -2,7 +2,7 @@
 title:      Torque is cheap
 date:       2017-06-20
 cowsay:     /cowphy/assets/test-cowphy/cowsay-torque-is-cheap.png
-summary:    The famous CS saying transformed to physics
+summary:    The famous CS saying transformed to physics saying
 tags: [classical mechanics, torque, angular momentum]
 ---
 
