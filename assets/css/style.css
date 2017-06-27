@@ -23,3 +23,10 @@
    overflow: none;
 }
 
+.footnotes {
+   margin-top: 5em;
+   padding-top: 2em;
+   background: white;
+   border-top: 2px dashed #046ca3;
+   
+}

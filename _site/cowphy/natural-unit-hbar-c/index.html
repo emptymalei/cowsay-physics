@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hello, Pixyll &#8211; Cowsay Physics</title>
+    <title>Natural Unit &#8211; Cowsay Physics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.">
+    <meta name="description" content="It's not natural at all.">
     <meta name="robots" content="all">
     <meta name="author" content="OctoMiao">
-    <meta name="keywords" content="jekyll, pixyll">
-    <link rel="canonical" href="http://localhost:4000/jekyll/pixyll/2014/06/11/welcome-to-pixyll/">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://localhost:4000/cowphy/natural-unit-hbar-c/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for Cowsay Physics" href="/feed.xml" />
 
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css" />-->
@@ -94,17 +94,17 @@
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Hello, Pixyll">
+    <meta property="og:title" content="Natural Unit">
     <meta property="og:description" content="What does the cow say about physics?">
-    <meta property="og:url" content="http://localhost:4000/jekyll/pixyll/2014/06/11/welcome-to-pixyll/">
+    <meta property="og:url" content="http://localhost:4000/cowphy/natural-unit-hbar-c/">
     <meta property="og:site_name" content="Cowsay Physics">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     
-    <meta name="twitter:title" content="Hello, Pixyll" />
-    <meta name="twitter:description" content="Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff." />
-    <meta name="twitter:url" content="http://localhost:4000/jekyll/pixyll/2014/06/11/welcome-to-pixyll/" />
+    <meta name="twitter:title" content="Natural Unit" />
+    <meta name="twitter:description" content="It's not natural at all." />
+    <meta name="twitter:url" content="http://localhost:4000/cowphy/natural-unit-hbar-c/" />
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
@@ -204,35 +204,50 @@
 
 
 <div class="post-header mb2">
-  <h1>Hello, Pixyll</h1>
-  <span class="post-meta">Jun 11, 2014</span><br>
+  <img src="/cowphy/assets/natural-unit-hbar-c/catsay-natural-unit-hbar-c.png" style="margin:auto;display:block;">
+  <h1 class="center">Natural Unit</h1>
+  <div class="center">
+  <span class="post-meta">Jun 27, 2017</span><br>
   
   <span class="post-meta small">
   
     1 minute read
   
   </span>
+  </div>
 </div>
 
 <article class="post-content">
-  <p>Hello.</p>
+  <p>At least it’s natural to me. This relation</p>
 
-<p>Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff. It’s mobile <em>first</em>, fluidly responsive, and delightfully lightweight.</p>
+<script type="math/tex; mode=display">1 = \hbar\cdot c = 197 \mathrm{MeV\cdot fm}</script>
 
-<p>It’s pretty minimal, but leverages large type and drastic contrast to make a statement, on all devices.</p>
+<p>is extremely useful for physicists.</p>
 
-<blockquote>
-  <p>
-    Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
-  </p>
-  <footer><cite title="Antoine de Saint-Exupéry">Antoine de Saint-Exupéry</cite></footer>
-</blockquote>
+<p>In most of my works, we would like to convert everything into energy scale or length scale for easy understanding.</p>
 
-<h2 id="where-is-it">Where is it?</h2>
+<p>The cat says, he need to estimate the neutrino oscillation scales. The only know energy scales are mass squared difference $\delta m^2$ and neutrino energy $E$. It turns out that the only energy scale in equation of motion is $\delta m^2/2E \sim 10^{-5}\mathrm{eV^2}/2E$. <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> Since this is the only energy scale and vacuum neutrino oscillation is a linear phenomenon, the oscillation scale should be inversely proportional to it,</p>
 
-<p>Checkout the <a href="https://github.com/johnotander/pixyll">Github repository</a> to download it, request a feature, or report a bug.</p>
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align}
+L^{-1} &\sim 10^{-5} \mathrm{eV^2}/E \sim 10^{-17} \mathrm{MeV^2}/E\\
+&\sim 10^{-17} \frac{\mathrm{MeV^2} }{1 \mathrm{MeV} } \frac{1 \mathrm{MeV} }{E} \\
+&\sim 10^{-17} \mathrm{MeV}  \frac{1 \mathrm{MeV} }{E} \\
+&\sim 10^{-17} \frac{1}{197\mathrm{fm}} \frac{1 \mathrm{MeV}}{E} \\
+&\sim 10^{-1} \mathrm{km^{-1}} \frac{1 \mathrm{MeV}}{E}
+\end{align}. %]]></script>
 
-<p>It’s free, and open source (<a href="http://opensource.org/licenses/MIT">MIT</a>).</p>
+<p>We conclude that 
+<script type="math/tex">L \sim 10 \mathrm{km} \left(\frac{E}{1 \mathrm{MeV}}\right).</script>
+For 1MeV neutrinos, the oscillation scale is 10km. Higher energy neutrinos will oscillate with larger wavelength.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>We have chosen the mass squared difference to be $\delta m^2_{12}$.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 </article>
 
