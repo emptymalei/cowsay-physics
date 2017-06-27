@@ -1,7 +1,7 @@
 ---
 title:      Solar mass
 date:       2017-06-20
-cowsay:     /cowphy/assets/test-cowphy/cowsay-mass-sun-earth.png
+cowsay:     /cowphy/assets/solar-mass/cowsay-mass-sun-earth.png
 summary:    It's always fun to play with units
 tags: [general relativity, units]
 ---
@@ -35,4 +35,3 @@ $$
 In SI units, we know that solar mass is $1.988\times 10^{30}\mathrm{kg}$ and the mass of Earth is $5.972\times 10^{24}\mathrm{kg}$. The consersion to meters is straight forward.
 
 By the way, the value of mass in length (meters) is called geometrized value.
-
