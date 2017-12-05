@@ -15,4 +15,4 @@ Once you set $\hbar c = 197$, the magic will bring you to the simple relation
 
 It's proven.
 
-Cocredit: Josh Martin @ UNM
+Cocredit: Josh Martin @ UNM, Lei Ma @ UNM
